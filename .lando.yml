@@ -1,0 +1,4 @@
+name: git-test
+recipe: lemp
+config:
+  webroot: code/site

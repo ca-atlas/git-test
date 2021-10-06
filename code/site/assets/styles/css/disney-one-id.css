@@ -1,0 +1,50 @@
+.logo-primary span {
+  display: block;
+  height: 54px;
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  background: no-repeat center center transparent;
+  background-size: contain;
+}
+
+.btn-group-create-account {
+  background-image: url(http://dl-prod.disneylive.com.s3-website-us-east-1.amazonaws.com/assets/images/disney-one-id/logo-disney-combine-2.png) !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  padding-bottom: 130px;
+}
+
+.footer > .ng-binding {
+  background-image: url(http://dl-prod.disneylive.com.s3-website-us-east-1.amazonaws.com/assets/images/disney-one-id/logo-disney-combine-2.png) !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  padding-top: 145px;
+}
+
+body {
+  background: rgba(19,31,66,0.9) !important;
+  background-image: url(http://dl-prod.disneylive.com.s3-website-us-east-1.amazonaws.com/assets/images/disney-one-id/stars.png) !important;
+  background-repeat: repeat-x !important;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body .wrapper {
+  top: 100px;
+}
+
+div#disneyid-wrapper {
+  position: fixed !important;
+}/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRpc25leS1vbmUtaWQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBRTtFQUNGLGFBQUU7RUFDRixhQUFFO0VBQ0Ysb0JBQUU7RUFDRixpQkFBRTtFQUNGLGdEQUFFO0VBQ0YseUJBQUU7Q0FDSDs7QUFFRDtFQUNFLHlKQUEyQjtFQUMzQix5QkFBRTtFQUNGLDZCQUFFO0VBQ0YsNEJBQWM7RUFDZCxZQUFFO0VBQ0gsc0JBQUE7Q0FDRDs7QUFFQTtFQUNFLHlKQUErQjtFQUMvQix5QkFBRTtFQUNGLDZCQUFjO0VBQ2YseUJBQW1CO0VBQ25CLFlBQUE7RUFDRCxtQkFBQTtDQUNDOztBQUVEO0VBQ0UsMENBQTBDO0VBQzNDLHlJQUFBO0VBQ0QsdUNBQUE7Q0FDQzs7QUFFRDtFQUNDLGFBQUE7RUFDRCxZQUFBO0NBQ0M7O0FBRUQ7RUFDRSxXQUFFO0NBQ0g7O0FBRUQ7RUFDRSwyQkFBMkI7Q0FDNUI7RUFDQztJQUNFLGdCQUFDO0dBQ0o7Q0FDQSIsImZpbGUiOiJkaXNuZXktb25lLWlkLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2dvLXByaW1hcnkgc3BhbiB7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgaGVpZ2h0OiA1NHB4O1xuICAgIGZvbnQtc2l6ZTogMDtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgYmFja2dyb3VuZDogbm8tcmVwZWF0IGNlbnRlciBjZW50ZXIgdHJhbnNwYXJlbnQ7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xufVxuLmJ0bi1ncm91cC1jcmVhdGUtYWNjb3VudHtcblx0YmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uL2Fzc2V0cy9pbWFnZXMvZGlzbmV5LW9uZS1pZC9sb2dvLWRpc25leS1jb21iaW5lLTIucG5nKSAhaW1wb3J0YW50O1xuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGJvdHRvbTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTMwcHg7XG59XG4uZm9vdGVyID4gLm5nLWJpbmRpbmd7XG5cdGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi8uLi9hc3NldHMvaW1hZ2VzL2Rpc25leS1vbmUtaWQvbG9nby1kaXNuZXktY29tYmluZS0yLnBuZykgIWltcG9ydGFudDtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvbnRhaW47XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiB0b3A7XG4gICAgd2lkdGg6IDEwMCU7XG5cdHBhZGRpbmctdG9wOiAxNDVweDtcbn1cbmJvZHkge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMTksMzEsNjYsMC45KSAhaW1wb3J0YW50O1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi8uLi9hc3NldHMvaW1hZ2VzL2Rpc25leS1vbmUtaWQvc3RhcnMucG5nKSAhaW1wb3J0YW50O1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiByZXBlYXQteCAhaW1wb3J0YW50O1xuICAgIFxufVxuaHRtbCB7XG4gICAgXG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHdpZHRoOiAxMDAlO1xufVxuYm9keSAud3JhcHBlciB7XG4gICAgdG9wOiAxMDBweDtcbn1cbmRpdiNkaXNuZXlpZC13cmFwcGVye1xuICAgIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xufVxuQG1lZGlhIHNjcmVlbiBhbmQgKC13ZWJraXQtbWluLWRldmljZS1waXhlbC1yYXRpbzowKSB7IFxuICAgIHNlbGVjdCxcbiAgICB0ZXh0YXJlYSxcbiAgICBpbnB1dCB7XG4gICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgfVxufVxuIl19 */@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select,textarea,input {
+    font-size: 16px;
+  }
+}

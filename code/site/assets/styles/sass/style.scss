@@ -1,0 +1,254 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  color:#343434;
+}
+h1, h2, h3, h4, h5, a{
+  font-family: 'Open Sans', sans-serif;
+  color:var(--primary-color);
+  font-weight: 600;
+  // letter-spacing: .03rem;
+  text-transform:uppercase;
+}
+@media only screen and (max-width: 600px){
+  h2{
+    font-size:2.8rem;
+  }
+}
+p {
+  color: #272B2E; 
+}
+@media (max-width: 900px) {
+  .row .column.column-10,
+  .row .column.column-20,
+  .row .column.column-25,
+  .row .column.column-33,
+  .row .column.column-40,
+  .row .column.column-50,
+  .row .column.column-60,
+  .row .column.column-67,
+  .row .column.column-75,
+  .row .column.column-80,
+  .row .column.column-90 {
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    max-width: 100%; 
+  } 
+}
+/*************** Basics ********************/
+.text-uppercase, .uppercase {
+  text-transform: uppercase;
+  text-align:center;
+}
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; 
+}
+
+/*************** Flex classes *******************/
+.container .flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    /*padding-top: 35px;*/
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/************Styles**************************/
+
+#goc-bar{
+  @media (max-width: 768px) {
+    display:none !important;
+  }
+}
+
+input[type='text']{
+  height:17px !important;
+}
+
+body{
+  background-image: url(../../images/disney-live-page-background.jpg);
+  background-size:cover;
+  
+
+  @media (max-width:768px) {
+    background-image: url(../../images/disney-live-page-background-phone.jpg);
+    background-size:cover;
+  }
+
+}
+
+.main{
+  @media (max-width:560px) {
+    width:100%;
+  }
+}
+
+wrapper.wrapper{
+  width:100vw;
+  height:94vh;
+  display:block;
+  position:relative;
+  @media (min-width:560px) and (max-width: 769px) {
+    height:99vh;
+  }
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:calc(100% - 200px);
+  
+  @media (max-width:560px) {
+    height:calc(100% - 140px);
+  }
+}
+
+.box{
+  height:450px;
+  width:700px;
+  background-color:rgba($color: #fff, $alpha: 0.7);
+  border-radius:5px;
+
+  @media (max-width:560px) {
+    width:90%;
+  }
+  @media (min-width:560px) and (max-width: 1200px) {
+      width:500px;
+      height:300px;
+  }
+  @media (max-height: 700px) {
+      width:500px;
+      height:300px;
+  }
+
+  .logo{
+    width:50%;
+    padding-top:50px;
+    position:relative;
+    left:50%;
+    margin-left:-25%;
+
+    @media (min-width:560px) and (max-width: 1200px) {
+      padding-top:10px;
+      width:40%;
+      margin-left:-20%;
+    }
+    @media (max-height: 700px) {
+      padding-top:10px;
+      width:40%;
+      margin-left:-20%;
+    }
+  }
+
+  h2{
+    font-weight:700;
+    font-size:1.5em;
+    text-align:center;
+    padding:10px 0;
+    margin-top:-20px;
+    
+    @media (max-width:560px) {
+      font-size:1.3em;
+    }
+    @media (min-width:560px) and (max-width: 1200px) {
+      font-size:1.3em;
+    }
+    @media (max-height: 700px) {
+      font-size:1.3em;
+    }
+  }
+
+  .line{
+    border-bottom:5px solid #72016d;
+    width:30%;
+    margin:0 auto;
+
+    @media (max-width:560px) {
+      width:50%;
+    }
+  }
+
+  .content{
+    p{
+      text-align:center;
+      padding: 30px 100px 0;
+
+      @media (max-width:560px) {
+        padding:30px 20px 0;
+        font-size:.9em;
+        padding-bottom:10px;
+      }
+      @media (min-width:560px) and (max-width: 1200px) {
+        font-size:.7em;
+      }
+      @media (max-height: 700px) {
+        font-size:.7em;
+      }
+      
+    }
+
+    .btn{
+      padding:10px 35px;
+      background-color:#fcd012;
+      border: 2px solid #ab8d3f;
+      font-weight:700;
+      width:150px;
+      position:relative;
+      left:50%;
+      margin-left:-75px;
+      margin-top:10px;
+      font-size:1.1em;
+
+      @media (max-width:560px) {
+        margin-top:20px;
+      }
+    }
+  }
+}
+
+#disneyFooter{
+  background-color:white;
+  bottom:0;
+  position:absolute;
+  width:100%;
+  margin-bottom:-25px;
+
+  @media (max-width:560px) {
+    bottom:-175px;
+  }
+  @media (max-width:380px) {
+    bottom:-250px;
+  }
+  @media (max-width:325px) {
+    bottom:-300px;
+  }
+}

@@ -1,0 +1,5 @@
+:root {
+  --primary-color: #343434;
+ /* DY-color */ /* use : var(--primary-color); */
+  --yellow: #fcd012;
+}/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxpQ0FBaUM7RUFDakMsa0JBQWtCLEVBQUUiLCJmaWxlIjoiYmFzZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6cm9vdCB7XG4gIC0tcHJpbWFyeS1jb2xvcjogIzM0MzQzNDtcbiAgLyogRFktY29sb3IgKi9cbiAgLyogdXNlIDogdmFyKC0tcHJpbWFyeS1jb2xvcik7ICovXG4gIC0teWVsbG93OiAjZmNkMDEyOyB9XG4iXX0= */

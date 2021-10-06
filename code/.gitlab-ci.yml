@@ -1,0 +1,66 @@
+variables:
+  S3_BUCKET_NAME: "dl-prod.disneylive.com"
+  S3_BUCKET_STAGE_NAME: "dl-stage.disneylive.com"
+
+stages:
+  - build
+  - deploy
+
+# build_stage:
+#   tags: 
+#    - shell_runner
+#   stage: build
+#   script:
+#     - nvm use
+#     - npm install
+#     - grunt dist
+#   only:
+#     - stage
+#   artifacts:
+#     paths:
+#     - site/
+
+build_prod:
+  tags: 
+   - shell_runner
+  stage: build
+  script:
+    - nvm use
+    - npm install
+    - grunt dist
+  only:
+    - master
+  artifacts:
+    paths:
+    - site/
+
+
+# deploy to stage:
+#   tags: 
+#     - docker_runner
+#   stage: deploy
+#   environment: stage
+#   image: python:latest
+#   script:
+#     - pip install awscli
+#     - aws s3 sync ./dist/ s3://$S3_BUCKET_STAGE_NAME/
+#     - aws configure set preview.cloudfront true
+#     - aws cloudfront create-invalidation --distribution-id E2YWMU1JJLKFLT --paths '/*'
+#   only:
+#     - stage
+
+
+deploy to production:
+  tags: 
+    - docker_runner
+  stage: deploy
+  environment: production
+  image: python:latest
+  script:
+    - pip install awscli
+    - aws s3 sync ./site/ s3://$S3_BUCKET_NAME/
+    - aws configure set preview.cloudfront true
+    - aws s3 cp s3://$S3_BUCKET_NAME/ s3://$S3_BUCKET_NAME/ --recursive --metadata-directive REPLACE --expires 2034-01-01T00:00:00Z --acl public-read --cache-control max-age=60,public
+    - aws cloudfront create-invalidation --distribution-id EZYCTG2OISWCK --paths '/*'
+  only:
+    - master
