@@ -8,9 +8,8 @@ Inside this repository, at the root, is a PDF document named `ATLAS GIT methodol
 
 ## Test
 
-- Create a feature branch for your work
-- Change colour of `Sign Up` button to _purple_
-- Push feature branch
-- Create branch off `stage` e.g. (if your name was John Smith) `js_stage`
-- Merge feature branch into your stage e.g. `js_stage`, and push
-- Email ATLAS team listing feature branch name and stage branch name
+- Folk repo e.g. https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository
+- Create feature branch this will be provided and follow the naming conversation of initials + date, e.g. js_2021-10-09
+- Change colour of `Sign Up` button to _purple_.
+- Merge your feature branch into `stage`
+- Create a **pull request** to the original repo e.g. https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
