@@ -123,9 +123,7 @@ wrapper.wrapper {
 }
 
 .box .content .btn {
-  padding: 10px 35px;
-  background-color: #fcd012;
-  border: 2px solid #ab8d3f;
+  padding: 10px 35px; 
   font-weight: 700;
   width: 150px;
   position: relative;
@@ -134,6 +132,17 @@ wrapper.wrapper {
   margin-top: 10px;
   font-size: 1.1em;
 }
+
+.btnYellow {
+  background-color: #fcd012;
+  border: 2px solid #ab8d3f;
+}
+
+.btnPurple {
+  background-color: #DA70D6;
+  border: 2px solid #BA55D3;
+}
+ 
 
 #disneyFooter {
   background-color: white;
